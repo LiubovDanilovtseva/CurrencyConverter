@@ -11,12 +11,7 @@ import com.afollestad.bridge.BridgeException;
 import com.afollestad.bridge.Response;
 import com.afollestad.bridge.ResponseConvertCallback;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
-
 public class Converter {
-
-	private CountDownLatch mSignal;
 
 	public synchronized void calculate(final String currency, final String desiredCurrency, final Double value,
 									   final ICalculateListener listener) throws InterruptedException {
